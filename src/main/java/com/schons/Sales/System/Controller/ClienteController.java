@@ -37,4 +37,9 @@ public class ClienteController {
     public List<Cliente> listAll() {
         return clienteDAO.listAll();
     }
+
+    @GetMapping("/{id}")
+    public Cliente findById(@PathVariable int id){
+        return clienteDAO.findById(id);
+    }
 }
