@@ -55,4 +55,8 @@ public class Cliente {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    public String toString() {
+        return "Nome: " + getNome() + "\nEmail: " + getEmail() + "\nCPF: " + getCpf();
+    }
 }
